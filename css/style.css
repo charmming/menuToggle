@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    color: #f3f3f3;
+}
+
+.container {
+    padding: 10px;
+    margin: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/burger.png');
+    background-size: contain;
+    background-position: center;
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+}
+
+nav{
+    background-color: rgb(224, 224, 220);
+    padding: 10px;
+}
+
+.logo:hover{
+    border: solid 1px #ce1414;
+    border-radius: 50%;
+}
+
+.objects{
+    margin-left: auto;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    font-weight: 500px;
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    background-color: #37e44e;
+    border: solid 1px #37e44e;
+}
+
+button:hover{
+    border: solid 1px #ce1414;
+}
+
+.content{
+    background-color: #ffffff;
+    color: #000000;
+    width: 40%;
+    padding: 10px;
+    display: none;
+    text-align: justify;
+}
+
+.scroll{
+min-height: 200px;
+max-height: 400px;
+overflow: auto;
+}
