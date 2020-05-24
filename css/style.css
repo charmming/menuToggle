@@ -10,24 +10,10 @@ body, html {
     margin: 10px;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-}
-
-.logo{
-    width: 50px;
-    height: 50px;
-    background-image: url('../img/burger.png');
-    background-size: contain;
-    background-position: center;
-    border: solid 1px #ffffff;
-    border-radius: 50%;
-}
-
-nav{
+nav.menu{
     background-color: rgb(224, 224, 220);
     padding: 10px;
+    display: none;
 }
 
 .logo:hover{
@@ -66,4 +52,65 @@ button:hover{
 min-height: 200px;
 max-height: 400px;
 overflow: auto;
+}
+
+.large{
+    background-color: rgb(224, 224, 220);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+ul.menuBig{
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+li {
+    text-decoration: none;
+}
+ul li a{
+    margin: 0px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.biglogo h1{
+    color: black;
+}
+
+@media only screen and (max-width: 768px){
+    nav.menu{
+        background-color: rgb(224, 224, 220);
+        padding: 10px;
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .logo{
+        width: 50px;
+        height: 50px;
+        background-image: url('../img/burger.png');
+        background-size: contain;
+        background-position: center;
+        border: solid 1px #ffffff;
+        border-radius: 50%;
+    }
+
+    .large{
+        display: none;
+    }
 }
